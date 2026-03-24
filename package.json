@@ -1,0 +1,38 @@
+{
+  "name": "@zomeki/screencap",
+  "description": "Capture screenshot using Screen Capture API",
+  "version": "0.1.0",
+  "source": "src/index.js",
+  "main": "./dist/index.js",
+  "umd:main": "./dist/index.umd.js",
+  "module": "./dist/index.module.mjs",
+  "style": "./dist/index.css",
+  "author": "SiteBridge Inc. <info@sitebridge.co.jp>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zomeki/screencap.git"
+  },
+  "scripts": {
+    "watch": "rollup -c -w",
+    "build": "rollup -c",
+    "start": "http-server -c-1 --ssl --key certs/localhost-key.pem --cert certs/localhost.pem"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "autoprefixer": "^10.4.23",
+    "http-server": "^14.1.1",
+    "postcss": "^8.5.6",
+    "rollup": "^2.79.2",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-string": "^3.0.0",
+    "sass": "^1.97.2"
+  }
+}

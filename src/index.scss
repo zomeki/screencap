@@ -1,0 +1,16 @@
+html.screencap--capturing {
+  scroll-behavior: auto !important;
+  scrollbar-width: none !important;
+  cursor: none !important;
+
+  body {
+    scroll-behavior: auto !important;
+    scrollbar-width: none !important;
+    cursor: none !important;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0 !important;
+    }
+  }  
+}
